@@ -1,0 +1,5 @@
+try {
+    funcionNoExiste()
+} catch { //catch (error)
+    console.log('ya no es required incluir error como parametro del catch')
+}
