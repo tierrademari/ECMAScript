@@ -10,14 +10,14 @@ class user {
     }
 
     greeting() {
-        return `${this.speak()} ${this.name}`;
+        return `${this.#speak()} ${this.name}`;
     }
 
-    get #uAge() {
+    get uAge() {
         return this.age;
     }
 
-    set #uAge(age) {
+    set uAge(age) {
         this.age = age;
     }
 
