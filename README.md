@@ -13,10 +13,11 @@ Proyecto para experimentar con la evolución de Javascript desde 2015 hasta la a
 ### ECMAScript 6: Junio 2015
 - let y const
 - arrow functions
-- template literals
-- multi-line strings
-- default parameters
-- object and array destructuring
-- spread operator - operador de propagacion
-- rest parameter
-- object literals
+- template literals: unir strings
+- multi-line strings: dar saltos de linea con el caracter `
+- default parameters: crear parametros por defecto
+- object and array destructuring: crear variable a partir de un objeto u array
+- spread operator - operador de propagacion: descomponer un array u objeto
+- rest parameter: agrupar valores
+- object literals: crear un objeto basado en el nombre de las variables
+- 

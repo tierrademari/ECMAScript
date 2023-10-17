@@ -15,9 +15,7 @@ var add = function (a, b, c) {
   };
 
 //funcion flecha
-const square = (num) => {
-    return num * num;
-}
+const square = (num) => num * num;
 
 //simplificacion de codigo:
 //cuando hay un unico argumento se puede omitir los parentesis
@@ -28,20 +26,19 @@ console.log(square(4));
 //Otros ejemplos con una funcion sin parametros:
 //CORRECTO: arrow function tipico
 const print1 = () => 'Give me a second';
-console.log(print1());
+console.log(print1()); //Give me a second
 
 //INCORRECTO:
 const print2 = () => { 'Give me a second' }; 
-console.log(print2());
+console.log(print2()); //undefined
 
 //CORRECTO: el print1 seria la opcion simplificada
 const print3 = () => { return 'Give me a second' }; 
-console.log(print3());
+console.log(print3()); //Give me a second
 
 //CORRECTO: se usan () para indicar el return de forma implicita
 const print4 = () => ('Give me a second');
-console.log(print4());
-
+console.log(print4()); //Give me a second
 
 //Usos practicos
 const materials = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium'];

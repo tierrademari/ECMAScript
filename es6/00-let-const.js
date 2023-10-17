@@ -4,8 +4,9 @@
 const fruits = () => {
     if (true) {
         
+        //con var este valor existe arriba porque se inicializa: hoisted
         //(typeof fruit1 === 'undefined')
-        console.log(fruit1); //con var este valor existe arriba porque se inicializa: hoisted
+        console.log(fruit1); //undefined
 
         try {
             console.log(fruit2);
@@ -22,21 +23,19 @@ const fruits = () => {
     }
     
     if (typeof fruit1 !== 'undefined')
-        console.log("con var este valor si existe ");
+        console.log("con var este valor si existe abajo del bloque");
 
     try {
-        console.log(fruit2);
-        console.log(fruit3);
+        console.log(fruit2);   //ReferenceError: fruit2 is not defined
+        console.log(fruit3);   //ReferenceError: fruit3 is not defined
     } catch {
-        //ReferenceError: fruit2 is not defined
-        //ReferenceError: fruit3 is not defined
     }
 
     if (typeof fruit2 === 'undefined')
-        console.log("con let este valor no existe ");
+        console.log("con let este valor no existe abajo del bloque");
 
     if (typeof fruit3 === 'undefined')
-        console.log("con const este valor no existe ");
+        console.log("con const este valor no existe abajo del bloque");
 }
 
 fruits();
