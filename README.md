@@ -20,4 +20,13 @@ Proyecto para experimentar con la evolución de Javascript desde 2015 hasta la a
 - spread operator - operador de propagacion: descomponer un array u objeto
 - rest parameter: agrupar valores
 - object literals: crear un objeto basado en el nombre de las variables
-- 
+- promises
+- classes
+- modulos: se crean funciones o variables dentro de un archivo exportables hacia otros documentos.
+- generator
+- new set: crear listas de elementos sin elementos repetidos.
+
+
+### ECMAScript 7: Junio 2016
+- operador exponencial: para aplicar exponenciales matematicos usamos doble asterisco ** >> anteriormente se usaba Math.pow
+- array includes: nos permite determinar si un elemento esta dentro del array

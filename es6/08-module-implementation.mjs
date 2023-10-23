@@ -18,3 +18,10 @@ graph.options = {
 graph.draw();
 console.log(cube(3)); // 27
 console.log(foo); // 4.555806215962888
+
+import { getData } from './08-module.mjs';
+async function solution() {
+    let value = await getData();
+    console.log(value);
+}
+solution();

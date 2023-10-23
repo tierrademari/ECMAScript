@@ -5,33 +5,21 @@ function* generator1(){
 }
 
 const iterador = generator1()
-
-let obj = iterador.next();
-console.log(obj);
-console.log(obj.value)//1
-
-obj = iterador.next();
-console.log(obj);
-console.log(obj.value) //2
-
-obj = iterador.next();
-console.log(obj);
-console.log(obj.value) //3
-
-obj = iterador.next();
-console.log(obj);
-console.log(obj.value) //undefined
-
+console.log(iterador.next().value)//uno
+console.log(iterador.next().value)//dos
+console.log(iterador.next().value)//tres
 
 //Second example
-function* generator2(array) {
+function* segundoIterador(array) {
     for(let value of array) {
         yield value;
     }
 }
 
-const arrExample = generator2(['Oscar', 'David', 'Ana'])
+const arrExample = segundoIterador(['Oscar', 'David', 'Ana',  'Ulises', 'Jeniffer'])
 console.log(arrExample.next().value) //Oscar
+console.log(arrExample.next().value) //David
+console.log(arrExample.next().value) //Ana
 
 //Third example
 function* generator3(array) {
@@ -43,9 +31,10 @@ function* generator3(array) {
 const objArrayExample = generator3([
     {name: 'Oscar', age: 21}, {name: 'David', age: 22}, {name: 'Ana', age: 29}
 ])
-console.log(objArrayExample.next().value) //Oscar
-console.log(objArrayExample.next().value) //David
-console.log(objArrayExample.next().value) //Ana
+console.log(objArrayExample.next().value) //21
+console.log(objArrayExample.next().value) //22
+console.log(objArrayExample.next().value) //29
+console.log(objArrayExample.next().value) //undefined
 
 //Tarea
 // En la guardería de Michis "Michilango", están registrando nuevos michis, pero necesitan una forma de identificarlos.

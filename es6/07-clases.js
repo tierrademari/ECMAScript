@@ -1,7 +1,7 @@
 class user {
     constructor(name, age){
         this.name = name;
-        this.age = name;
+        this.age = age;
     }
 
     speak() {

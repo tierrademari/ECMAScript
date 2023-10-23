@@ -76,3 +76,10 @@ hola(...finalArray, 'final') // es igual a escribir: hola(1,2,3,4,5, 'final')
 const arrayNumbers = [0,1,2,3,4,5]
 const [cero0, uno1, ...otrosnum] = arrayNumbers //rest parameter: agrupa (funciona como si fueran los parametros de una funcion)
 console.log(otrosnum) // [ 2, 3, 4, 5 ]
+
+
+//****Otros usos del operador de propagacion junto a new Set() > eliminar elementos repetidos de una lista
+const arrayConElementosRep = [1, 1, 2, 2, 3, 4, 4, 5]
+
+const sinRepetidos = [ ... new Set(arrayConElementosRep)]
+console.log(sinRepetidos) // [ 1, 2, 3, 4, 5 ]
