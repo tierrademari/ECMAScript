@@ -29,4 +29,4 @@ Proyecto para experimentar con la evolución de Javascript desde 2015 hasta la a
 
 ### ECMAScript 7: Junio 2016
 - operador exponencial: para aplicar exponenciales matematicos usamos doble asterisco ** >> anteriormente se usaba Math.pow
-- array includes: nos permite determinar si un elemento esta dentro del array
+- array includes: nos permite determinar si un elemento esta dentro del array. Puede usarse con cadenas de texto.

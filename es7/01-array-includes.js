@@ -1,5 +1,5 @@
+// La comparativa toma encuenta las letras mayusculas y diferencia una letra de un numero, por lo que 1 y '1' con diferentes.
 // Este método recibe dos argumentos:
-
 // El elemento a comparar.
 // El índice inicial desde donde comparar hasta el último elemento. Permite indices negativos
 
